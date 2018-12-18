@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentLinearLayout"
+    android:orientation="vertical"
+    tools:context=".Home">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Item List"
+        android:textColor="#a9a9a9"
+        android:textSize="20sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_place"
+        android:orientation="vertical"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/additem"
+        android:onClick="additem"
+        android:text="Add item"
+        android:textAllCaps="false"
+        android:textAlignment="textStart"
+        android:background="#f1f1f1"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:textColor="#a9a9a9"/>
+</LinearLayout>

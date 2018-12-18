@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Home"
+    android:id="@+id/fragid"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            >
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:hint="Enter Item"
+                android:background="#00000000"
+                android:textSize="20sp"
+                android:textColor="#a9a9a9"
+
+                android:inputType="textNoSuggestions"/>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/minus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/counter"
+                    android:text="-"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp"
+
+                    android:textColor="#fff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/minus"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/countertext"
+                    android:text="1"/>
+
+                <Button
+                    android:id="@+id/plus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/counter"
+                    android:text="+"
+                    android:layout_toEndOf="@+id/countertext"
+                    android:layout_marginStart="10dp"
+
+                    android:textColor="#fff"/>
+
+                <Button
+                    android:id="@+id/remove"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:background="@android:drawable/ic_menu_close_clear_cancel"
+
+                    android:layout_marginEnd="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="#000"/>
+
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+</LinearLayout>
